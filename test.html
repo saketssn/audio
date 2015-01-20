@@ -6,10 +6,13 @@
     
     <body>
         <input type="file" accept="audio/*;capture=microphone"> 
-        
         <audio controls>
             <source src="audio/test.mp3">
         Your browser does not support HTML 5 audio
         </audio>
+        
+        <device type="media" onchange="update(this.data)"></device>
+        <video autoplay></video>   
+        
     </body>
 </html>
