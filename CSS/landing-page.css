@@ -35,6 +35,10 @@ h6 {
     background-size: cover;
 }
 
+.image{
+    width: 400px;
+}
+
 .intro-message {
     position: relative;
     padding-top: 20%;
