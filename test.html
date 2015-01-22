@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>The Test files for Aural</title>
+    <link type="text/css" rel="stylesheet" href="css/test.css">
+    <link type="text/css" rel="stylesheet" href="css/landing-page.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="buttons">
+        
+        <a class="button" onclick="startRecording(this);">
+            <i class="fa fa-microphone fa-5x"></i>
+        </a>
+        
+        <a class="button" onclick="stopRecording(this);" disabled>
+            <i class="fa fa-microphone-slash fa-5x"></i>
+        </a>
+        
+    </div>
+  
+  <h2>Recordings</h2>
+  <ul id="recordingslist"></ul>
+  
+  <h2>Log</h2>
+  <pre id="log"></pre>
+
+  <script src="js/test.js"></script>
+  <script src="js/recorder.js"></script>
+</body>
+</html>
