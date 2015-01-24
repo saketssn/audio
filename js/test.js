@@ -4,6 +4,7 @@ function __log(e, data) {
 
   var audio_context;
   var recorder;
+  var counter = 0
 
   function startUserMedia(stream) {
     var input = audio_context.createMediaStreamSource(stream);
@@ -36,18 +37,22 @@ function __log(e, data) {
     recorder.clear();
   }
 
+
   function createDownloadLink() {
     recorder && recorder.exportWAV(function(blob) {
       var url = URL.createObjectURL(blob);
       var li = document.createElement('li');
+      var tit = document.createElement('h1');
       var au = document.createElement('audio');
       var hf = document.createElement('a');
       
+      counter++;
       au.controls = true;
       au.src = url;
       hf.href = url;
-      hf.download = new Date().toISOString() + '.wav';
-      hf.innerHTML = hf.download;
+      tit.innerHTML = 'Audio: ' + counter;
+      hf.innerHTML = "Download audio";
+      li.appendChild(tit);
       li.appendChild(au);
       li.appendChild(hf);
       recordingslist.appendChild(li);
