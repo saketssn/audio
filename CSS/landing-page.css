@@ -35,8 +35,14 @@ h6 {
     background-size: cover;
 }
 
-.image{
+.headphone{
     width: 400px;
+}
+
+.mic{
+    height: 256px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .intro-message {
@@ -167,4 +173,23 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+a {
+    display: inline-block;
+    color: #333; transition: 0.5s; -webkit-transition:0.5s; text-decoration: none
+}
+
+a:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+a:hover:after {
+    width: 100%;
+    background: #333;
 }
