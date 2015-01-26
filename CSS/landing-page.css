@@ -26,6 +26,15 @@ h6 {
     font-weight: 400;
 }
 
+.beta{
+    text-decoration: none;
+    color: #999;
+}
+
+.beta:hover{
+    text-decoration: none;
+}
+
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
@@ -33,10 +42,6 @@ h6 {
     color: #f8f8f8;
     background: url(../img/intro-bg.jpg) no-repeat center center fixed;
     background-size: cover;
-}
-
-.headphone{
-    width: 400px;
 }
 
 .mic{
