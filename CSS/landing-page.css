@@ -26,6 +26,14 @@ h6 {
     font-weight: 400;
 }
 
+ul.nav li{
+    background-color: #4C4CFF;
+}
+
+ul.nav a{
+    color: #FFF; !important;
+}
+
 .beta{
     text-decoration: none;
     color: #999;
